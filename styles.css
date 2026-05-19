@@ -933,7 +933,13 @@ blockquote {
 @media (max-width: 680px) {
   .site-header {
     grid-template-columns: 1fr;
-    padding: 12px 14px;
+    min-height: 76px;
+    padding: 8px 14px;
+    justify-items: center;
+  }
+
+  .brand-copy {
+    display: none;
   }
 
   .header-link {
@@ -941,12 +947,17 @@ blockquote {
   }
 
   .brand-logo {
-    width: 178px;
-    height: 98px;
+    width: 150px;
+    height: 76px;
+    padding-top: 0;
+  }
+
+  .logo-word {
+    margin-top: 18px;
   }
 
   .logo-word strong {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .logo-word small {
@@ -961,7 +972,7 @@ blockquote {
 
   .hero {
     min-height: auto;
-    padding: 104px 18px 42px;
+    padding: 108px 18px 42px;
     background:
       linear-gradient(180deg, rgba(255, 250, 243, 0.94) 0%, rgba(255, 250, 243, 0.9) 58%, rgba(255, 250, 243, 0.98) 100%),
       linear-gradient(180deg, #fffaf3, #f3eadf);
@@ -993,6 +1004,7 @@ blockquote {
 
   .eyebrow {
     max-width: 340px;
+    margin-bottom: 20px;
     font-size: 11px;
   }
 
