@@ -973,6 +973,7 @@ blockquote {
   .hero {
     min-height: auto;
     padding: 108px 18px 42px;
+    justify-items: center;
     background:
       linear-gradient(180deg, rgba(255, 250, 243, 0.94) 0%, rgba(255, 250, 243, 0.9) 58%, rgba(255, 250, 243, 0.98) 100%),
       linear-gradient(180deg, #fffaf3, #f3eadf);
@@ -986,31 +987,39 @@ blockquote {
   }
 
   .hero-media {
-    inset: 84px -80px auto 40px;
-    height: 360px;
+    inset: 76px 0 auto;
+    height: 390px;
     opacity: 0.34;
   }
 
   .hero-media img {
-    width: 400px;
-    height: 360px;
-    object-position: right top;
-    transform: rotate(2deg);
+    width: 100%;
+    height: 100%;
+    object-position: center top;
+    transform: none;
   }
 
   .hero-content {
     width: 100%;
+    max-width: 394px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
 
   .eyebrow {
     max-width: 340px;
+    margin-right: auto;
     margin-bottom: 20px;
+    margin-left: auto;
     font-size: 11px;
   }
 
   h1 {
     max-width: 350px;
+    margin-right: auto;
     margin-bottom: 20px;
+    margin-left: auto;
     font-size: 37px;
     line-height: 1.04;
   }
@@ -1026,7 +1035,9 @@ blockquote {
 
   .lead {
     max-width: 350px;
+    margin-right: auto;
     margin-bottom: 26px;
+    margin-left: auto;
     font-size: 16px;
     line-height: 1.58;
   }
