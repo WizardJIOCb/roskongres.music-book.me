@@ -106,16 +106,6 @@ a {
   content: none;
 }
 
-.brand-logo img {
-  position: absolute;
-  bottom: 13px;
-  left: 50%;
-  width: 48px;
-  height: auto;
-  opacity: 0.38;
-  transform: translateX(-50%);
-}
-
 .logo-word {
   position: relative;
   z-index: 1;
@@ -945,11 +935,6 @@ blockquote {
   .brand-logo {
     width: 178px;
     height: 98px;
-  }
-
-  .brand-logo img {
-    bottom: 10px;
-    width: 38px;
   }
 
   .logo-word strong {
