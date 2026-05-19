@@ -733,11 +733,11 @@ h3 {
   display: block;
   object-fit: cover;
   object-position: center 60%;
-  transform: scale(1.22);
+  transform: scale(1.1);
 }
 
 .story-media:hover img {
-  transform: scale(1.28);
+  transform: scale(1.14);
 }
 
 blockquote {
