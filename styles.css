@@ -1015,6 +1015,11 @@ blockquote {
     font-size: 11px;
   }
 
+  .hero .eyebrow {
+    color: #ffe0a0;
+    text-shadow: 0 2px 14px rgba(45, 32, 25, 0.7);
+  }
+
   h1 {
     max-width: 350px;
     margin-right: auto;
@@ -1069,6 +1074,13 @@ blockquote {
 
   .hero-facts div {
     padding: 14px;
+  }
+
+  .product-strip img {
+    aspect-ratio: 4 / 3.25;
+    object-fit: contain;
+    object-position: center bottom;
+    background: #fbfaf7;
   }
 
   .contest-band {
