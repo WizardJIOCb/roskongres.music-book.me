@@ -392,7 +392,9 @@ h3 {
 }
 
 .section-heading .eyebrow {
-  margin-bottom: 16px;
+  display: block;
+  margin-bottom: 18px;
+  line-height: 1.25;
 }
 
 .section-heading h2 {
@@ -404,6 +406,10 @@ h3 {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
+}
+
+.section-heading.narrow .eyebrow {
+  max-width: none;
 }
 
 .intro {
@@ -673,6 +679,13 @@ h3 {
   order: 2;
 }
 
+.story-media img {
+  height: auto;
+  max-height: min(48vw, 620px);
+  object-fit: contain;
+  background: #f7f7f5;
+}
+
 blockquote {
   margin: 30px 0 0;
   padding: 22px 0 22px 24px;
@@ -744,6 +757,18 @@ blockquote {
 
 .cta-panel .btn.primary:hover {
   background: #f5d99d;
+}
+
+.cta-panel .btn.secondary.dark {
+  border-color: rgba(255, 253, 248, 0.54);
+  background: transparent;
+  color: #fffdf8;
+}
+
+.cta-panel .btn.secondary.dark:hover {
+  border-color: #fffdf8;
+  background: rgba(255, 253, 248, 0.14);
+  color: #fffdf8;
 }
 
 .site-footer {
@@ -979,6 +1004,11 @@ blockquote {
   .story-media img {
     height: auto;
     aspect-ratio: 4 / 5;
+  }
+
+  .story-media img {
+    aspect-ratio: auto;
+    object-fit: contain;
   }
 
   .tabs {
