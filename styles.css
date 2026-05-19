@@ -9,8 +9,8 @@
   --line: rgba(87, 74, 64, 0.18);
   --rose: #8d4b44;
   --rose-deep: #70423b;
-  --teal: #5a4b41;
-  --teal-dark: #3f342d;
+  --teal: #8f7357;
+  --teal-dark: #5a4638;
   --sky: #efeee9;
   --gold: #bd9966;
   --shadow: 0 24px 70px rgba(63, 52, 45, 0.12);
@@ -87,39 +87,28 @@ a {
 .brand-logo {
   position: absolute;
   left: 50%;
-  top: 12px;
+  top: 0;
   z-index: 2;
   display: flex;
-  width: 178px;
-  height: 86px;
+  width: 230px;
+  height: 116px;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 0 0 999px 999px;
-  background: rgba(255, 255, 252, 0.96);
+  padding-top: 2px;
+  border-radius: 0 0 130px 130px;
+  background: rgba(255, 255, 252, 0.98);
+  box-shadow: 0 12px 28px rgba(63, 52, 45, 0.05);
   transform: translateX(-50%);
 }
 
 .brand-logo::before,
 .brand-logo::after {
-  content: "";
-  position: absolute;
-  top: 52px;
-  width: min(38vw, 760px);
-  height: 1px;
-  background: rgba(87, 74, 64, 0.12);
-}
-
-.brand-logo::before {
-  right: calc(100% + 14px);
-}
-
-.brand-logo::after {
-  left: calc(100% + 14px);
+  content: none;
 }
 
 .brand-logo img {
-  width: 42px;
+  width: 54px;
   height: auto;
 }
 
@@ -132,7 +121,7 @@ a {
 
 .logo-word strong {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 23px;
+  font-size: 28px;
   font-weight: 500;
 }
 
@@ -140,7 +129,7 @@ a {
   margin-top: 2px;
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .brand strong,
@@ -345,13 +334,13 @@ h3 {
 }
 
 .btn.primary {
-  background: var(--gold);
-  color: #3f342d;
-  box-shadow: 0 14px 28px rgba(55, 39, 34, 0.2);
+  background: #b88d52;
+  color: #fffaf2;
+  box-shadow: 0 16px 30px rgba(85, 61, 43, 0.26);
 }
 
 .btn.primary:hover {
-  background: #d1ad76;
+  background: #8e673d;
 }
 
 .btn.secondary {
@@ -687,8 +676,8 @@ h3 {
   gap: clamp(28px, 5vw, 68px);
   align-items: start;
   background:
-    linear-gradient(135deg, rgba(31, 107, 99, 0.96), rgba(23, 79, 73, 0.96)),
-    var(--teal-dark);
+    linear-gradient(135deg, rgba(126, 103, 80, 0.96), rgba(86, 68, 55, 0.96)),
+    #6f5948;
   color: #fffdf8;
 }
 
@@ -715,7 +704,7 @@ h3 {
   padding: 24px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 252, 0.08);
 }
 
 .metrics strong {
@@ -776,8 +765,8 @@ blockquote {
   padding: clamp(30px, 5vw, 56px);
   border-radius: var(--radius);
   background:
-    linear-gradient(135deg, rgba(31, 107, 99, 0.95), rgba(126, 52, 64, 0.92)),
-    var(--teal);
+    linear-gradient(135deg, rgba(132, 109, 84, 0.96), rgba(111, 66, 58, 0.94)),
+    #7d6350;
   color: #fffdf8;
   box-shadow: var(--shadow);
 }
@@ -810,13 +799,14 @@ blockquote {
 }
 
 .cta-panel .btn.primary {
-  background: #fffdf8;
-  color: var(--teal-dark);
+  background: #fffaf2;
+  color: #5a4638;
   box-shadow: none;
 }
 
 .cta-panel .btn.primary:hover {
-  background: #f5d99d;
+  background: #d2ad78;
+  color: #3f342d;
 }
 
 .cta-panel .btn.secondary.dark {
@@ -943,6 +933,23 @@ blockquote {
 
   .header-link {
     display: none;
+  }
+
+  .brand-logo {
+    width: 178px;
+    height: 92px;
+  }
+
+  .brand-logo img {
+    width: 42px;
+  }
+
+  .logo-word strong {
+    font-size: 23px;
+  }
+
+  .logo-word small {
+    font-size: 11px;
   }
 
   .brand-mark {
