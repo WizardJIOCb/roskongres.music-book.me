@@ -89,12 +89,11 @@ a {
   left: 50%;
   top: 0;
   z-index: 2;
-  display: flex;
+  display: grid;
   width: 230px;
-  height: 116px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  height: 122px;
+  place-items: start center;
+  gap: 0;
   padding-top: 2px;
   border-radius: 0 0 130px 130px;
   background: rgba(255, 255, 252, 0.98);
@@ -108,25 +107,33 @@ a {
 }
 
 .brand-logo img {
-  width: 54px;
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  width: 48px;
   height: auto;
+  opacity: 0.38;
+  transform: translateX(-50%);
 }
 
 .logo-word {
+  position: relative;
+  z-index: 1;
   display: grid;
+  margin-top: 28px;
   color: var(--ink);
   line-height: 1;
-  text-align: left;
+  text-align: center;
 }
 
 .logo-word strong {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 500;
 }
 
 .logo-word small {
-  margin-top: 2px;
+  margin-top: 4px;
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 13px;
@@ -937,15 +944,16 @@ blockquote {
 
   .brand-logo {
     width: 178px;
-    height: 92px;
+    height: 98px;
   }
 
   .brand-logo img {
-    width: 42px;
+    bottom: 10px;
+    width: 38px;
   }
 
   .logo-word strong {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .logo-word small {
