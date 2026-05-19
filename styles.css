@@ -723,13 +723,21 @@ h3 {
 
 .story-media {
   order: 2;
+  aspect-ratio: 16 / 9;
+  background: #fffdf8;
 }
 
 .story-media img {
-  height: auto;
-  max-height: min(48vw, 620px);
-  object-fit: contain;
-  background: #f7f7f5;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 60%;
+  transform: scale(1.22);
+}
+
+.story-media:hover img {
+  transform: scale(1.28);
 }
 
 blockquote {
@@ -1067,8 +1075,9 @@ blockquote {
   }
 
   .story-media img {
-    aspect-ratio: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 58%;
   }
 
   .tabs {
