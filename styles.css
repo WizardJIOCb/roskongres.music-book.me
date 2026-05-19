@@ -593,6 +593,7 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center bottom;
 }
 
 .product-strip h3,
@@ -1077,10 +1078,9 @@ blockquote {
   }
 
   .product-strip img {
-    aspect-ratio: 4 / 3.25;
-    object-fit: contain;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     object-position: center bottom;
-    background: #fbfaf7;
   }
 
   .contest-band {
