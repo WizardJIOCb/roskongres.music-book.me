@@ -16,6 +16,7 @@
   --shadow: 0 24px 70px rgba(63, 52, 45, 0.12);
   --soft-shadow: 0 14px 36px rgba(63, 52, 45, 0.08);
   --radius: 8px;
+  --header-height: 104px;
   color-scheme: light;
 }
 
@@ -187,11 +188,12 @@ a {
 
 .hero {
   position: relative;
-  min-height: calc(100vh - 20px);
+  min-height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
   display: grid;
   align-items: end;
   overflow: hidden;
-  padding: 138px clamp(18px, 5vw, 72px) 72px;
+  padding: 72px clamp(18px, 5vw, 72px) 72px;
   background: #4f4037;
   color: #fffffc;
 }
@@ -934,6 +936,10 @@ blockquote {
 }
 
 @media (max-width: 680px) {
+  :root {
+    --header-height: 76px;
+  }
+
   .site-header {
     grid-template-columns: 1fr;
     min-height: 76px;
@@ -975,7 +981,7 @@ blockquote {
 
   .hero {
     min-height: auto;
-    padding: 108px 18px 42px;
+    padding: 34px 18px 42px;
     justify-items: center;
     background:
       linear-gradient(180deg, rgba(255, 250, 243, 0.94) 0%, rgba(255, 250, 243, 0.9) 58%, rgba(255, 250, 243, 0.98) 100%),
@@ -990,7 +996,7 @@ blockquote {
   }
 
   .hero-media {
-    inset: 76px 0 auto;
+    inset: 0 0 auto;
     height: 390px;
     opacity: 0.34;
   }
